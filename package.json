@@ -1,0 +1,63 @@
+{
+  "name": "oklch-as",
+  "displayName": "oklch-as",
+  "description": "This is a Visual Studio Code extension that provides a preview of OKLCH colorsxw",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/usmonovdev/oklch-as.git"
+  },
+  "publisher": "azizziy.uz",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": ["onLanguage"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "oklch-as",
+      "properties": {
+        "oklch-as.languages": {
+          "type": "array",
+          "default": [
+            "css",
+            "scss",
+            "less",
+            "tailwindcss",
+            "postcss"
+          ],
+          "description": "The languages to enable oklch-as in. The extension will only be enabled in these languages. You can use the language id or the file extension. For example, 'css' or 'postcss'."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "capabilities": {
+    "colorProvider": "true"
+  },
+  "devDependencies": {
+    "@types/culori": "^2.1.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.99.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "culori": "^4.0.1"
+  }
+}
