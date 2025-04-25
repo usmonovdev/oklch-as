@@ -2,12 +2,14 @@
   "name": "oklch-as",
   "displayName": "oklch-as",
   "description": "This is a Visual Studio Code extension that provides a preview of OKLCH colorsxw",
+  "icon": "public/oklch-as-logo.png",
   "repository": {
     "type": "github",
     "url": "https://github.com/usmonovdev/oklch-as.git"
   },
-  "publisher": "azizziy.uz",
-  "version": "0.0.1",
+  "publisher": "azizziy",
+  "version": "0.0.2",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.75.1"
   },
@@ -49,7 +51,7 @@
     "@types/culori": "^2.1.1",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
-    "@types/vscode": "^1.99.0",
+    "@types/vscode": "^1.75.1",
     "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@typescript-eslint/parser": "^8.28.0",
     "@vscode/test-cli": "^0.0.10",
